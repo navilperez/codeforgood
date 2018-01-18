@@ -9,6 +9,11 @@ import os
 pandas
 datetime
 numpy 
+matplotlib (eventually)
+openpyxl (just in case of dependencies)
+xlrd (just in case of dependencies)
+xlwt (just in case of dependencies)
+xlsxwriter (just in case of dependencies)
 '''
 #TODO make a .bat to install the above to python3
 #using command 'python -m pip install [library]'
