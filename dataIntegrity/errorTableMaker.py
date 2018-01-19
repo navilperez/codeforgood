@@ -9,6 +9,11 @@ import os
 pandas
 datetime
 numpy 
+matplotlib (eventually)
+openpyxl (just in case of dependencies)
+xlrd (just in case of dependencies)
+xlwt (just in case of dependencies)
+xlsxwriter (just in case of dependencies)
 '''
 #TODO make a .bat to install the above to python3
 #using command 'python -m pip install [library]'
@@ -19,6 +24,7 @@ numpy
 saying they have to re-save the xls files, as pandas thinks they are corrupted
 
 Note to self, make custom error reminding that this needs to be done.
+Maybe add a logger too
 '''
 
 
@@ -111,13 +117,12 @@ def testAllCols(row):
 		string -- headers of all columns in error for row
 	'''
 	errorColumns = []
-	colHeaders = list(DATA) #List of column headers
-	for cind, column in enumerate(row):
+	for cind, column in row.iteritems():
 		if column!="":
-			tests = getTests(colHeaders, cind)
+			tests = getTests(cind)
 			for test in tests:
 				if not test(column):
-					errorColumns.append(str(colHeaders[cind]))
+					errorColumns.append(cind)
 					break
 	errorColumnsString = ", ".join(errorColumns)
 	return errorColumnsString
@@ -134,24 +139,22 @@ def runTests(df):
 	Returns:
 		DataFrame -- df with a new column detailing errors
 	'''
-	df['error_columns'] = df.apply(testAllCols, axis=1, raw=True)
+	df['error_columns'] = df.apply(testAllCols, axis=1, raw=False)
 	return df
 
-def getTests(colHeaders, colInd):
+def getTests(col):
 	'''Get Tests
 	
 	Retrieves all tests for a particular field
 	by checking columnTests file
 	
 	Arguments:
-		colHeaders {list} -- column headers from DATA
-		colInd {int} -- index of current column
+		col {str} -- column title from DATA
 	
 	Returns:
 		list -- list of functions returning True if passed, False otherwise
 	'''
-	tests = columnTests.columnTests[colHeaders[colInd]]
-	return tests
+	return columnTests.FIELD_TESTS[col]
 
 #Global original DataFrame
 DATA = makeDataFrameFromExcel(FILENAME)	
