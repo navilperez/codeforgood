@@ -96,10 +96,7 @@ def readSettingSpreadsheet(df):
     '''
     fieldTests = {}
     for rind, row in df.iterrows():
-        try:
-            fieldTests[rind] = []
-        except:
-            print("PROBLEM!! Row in setting file not unique")
+        fieldTests[rind] = []
         for cind, col in row.iteritems():
             if col!='':
                 try:
