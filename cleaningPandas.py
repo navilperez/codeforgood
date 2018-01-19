@@ -144,16 +144,12 @@ def column_formatting():
 
 def is_21_yrs(date):
     '''helper: checks if a date is at least 21 years old'''
-    now = datetime.datetime.now() # current time
+    today = datetime.datetime.today()
+    age = datetime.timedelta(years=21)
     year, month, day = int(date[:4]), int(date[5:7]), int(date[8:])
     birthdate = datetime.date(year, month, day)
 
-    # in case of a leap year!
-    # incorrectly addresses invalid months and days. Pls Fix :(
-    try: birthdate = datetime.datetime(year+21, month, day)
-    except: birthdate = datetime.datetime(year+21, 3, 1)
-
-    return birthdate <= now
+    return today - birthdate >= age
 
 def find_errors(column_names):
     '''iterates through every entry value in every column and prints errors'''
