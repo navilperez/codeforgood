@@ -55,6 +55,96 @@ def is_atleast_zero(x):
     except:
         return False
 
+def is_zipcode(x):
+    pass
+
+def is_int_in_range(x, start, end):
+    '''checks if x is number in provided range'''
+    try:
+        return int(x) in range(start, end + 1)
+    except: 
+        return False
+
+def is_1_or_2(x):
+    '''checks if x is number in range 1 -> 2'''
+    
+    return is_int_in_range(x, 1, 2)
+    
+def is_1_to_5(x):
+    '''checks if x is number in range 1 -> 5'''
+    
+    return is_int_in_range(x, 1, 5)
+
+def is_1_to_3(x):
+    '''checks if x is number in range 1 -> 3'''
+    
+    return is_int_in_range(x, 1, 3)
+
+def is_0_to_2(x):
+    '''checks if x is number in range 0 -> 2'''
+    
+    return is_int_in_range(x, 0, 2)
+
+def is_1_to_10(x):
+    '''checks if x is number in range 1 -> 10'''
+    
+    return is_int_in_range(x, 1, 10)
+
+def is_0_to_4(x):
+    '''checks if x is number in range 0 -> 4'''
+    
+    return is_int_in_range(x, 0, 4)
+
+def is_in_Choices(x, choices):
+    '''checks if x is in list of possible choices'''
+    
+    return str(x) in choices
+
+def is_Yes_or_No(x):
+
+    return is_in_Choices(x, ["Yes", "No"]);
+
+
+def is_WellnessActivities_choice(x):
+
+    return is_in_Choices(x, ["ActivitiesUsed", "ActivitiesHelpful"])
+
+def is_VitaminsMinerals_choice(x):
+
+    return is_in_Choices(x, ["VitMinUsed", "VitMinHelpful"])
+
+def is_Supplements_choice(x):
+
+    return is_in_Choices(x, ["SupplementsUsed",  "SupplementHelpful"])
+
+def is_Diet_choice(x):
+    
+    return is_in_Choices(x, ["DietUsed", "DietHelpful"])
+
+def is_high_cholesterol_drug(x):
+
+    hcDrugs = ["Alirocumab", "Atorvastatin", "Cholestyramine", "Colesevelam", "Colestipol", "Evolocumab", "Ezetimibe", "Fenofibrate", "Fluvastatin", "Gemfibrozil", "Lovastatin", "Niacin", "Pitavastatin", "Pravastatin", "Rosuvastatin", "Simvastatin", "Other"]
+
+    return is_in_Choices(x, hcDrugs);
+
+def is_Yes_No_DontKnow(x):
+
+    return is_in_Choices(x, ["Yes", "No", "DontKnow"]);
+
+def is_HasMSChoice(x):
+    return is_in_Choices(x, ["ProbablyHaveMS", "NotSureHaveMS", "DontHaveMS"]);
+
+def is_form_of_MS(x):
+    return is_in_Choices(x, ["CIS", "rrms", "spms","ppms", "ris", "99"]);
+
+def is_Yes_No_DontKnow_NA(x):
+    return is_in_Choices(x, ["Yes", "No", "IDontKnow", "Notapplicable"]);
+
+def is_MS_Diagnostic_Test(x):
+    return is_in_Choices(x, ["HeadMRI", "SpinalcordMRI", "SpinalFluidTest", "BloodTest", "DiagnosticEvoked", "NeurologicalExamination", "Other", "NoTest", "NotSure"]);
+
+def is_HowDidPersonHelp_choice(x):
+    return is_in_Choices(x, ["ReadOrEntered", "Answered", "OtherHelp"]);
 '''Here are the mappings from the excel file to test functions they represent'''
 TEST_MAPPING = {
     'Is a string of characters (not a plain number)': is_string,
@@ -62,7 +152,25 @@ TEST_MAPPING = {
     'Is a number atleast zero': is_atleast_zero,
     'Is a positive number': is_positive,
     'Is a valid birthdate (over 21, under 150)': is_valid_birthdate,
-    "Is 'Y' or 'N'": is_Y_or_N
+    "Is 'Y' or 'N'": is_Y_or_N,
+    "Is an integer between 1 to 2": is_1_or_2,
+    "Is an integer between 1 to 5": is_1_to_5,
+    "Is an integer between 1 to 3": is_1_to_3,
+    "Is an integer between 0 to 2": is_0_to_2,
+    "Is an integer between 1 to 10": is_1_to_10,
+    "Is an integer between 0 to 4": is_0_to_4,
+    "is 'Yes' or 'No'": is_Yes_or_No,
+    "Is WellnessActivities Choice": is_WellnessActivities_choice,
+    "Is VitaminsMinerals Choice":is_VitaminsMinerals_choice
+    "Is Supplements Choice":is_Supplements_choice
+    "Is Diet Choice":is_Diet_choice
+    "Is HighCholesterol Drug": is_high_cholesterol_drug,
+    "Is Yes, No, Don't Know": is_Yes_No_DontKnow,
+    "Is HasMSChoice": is_HasMSChoice,
+    "Is Form of MS": is_form_of_MS,
+    "Is Yes, No, Not Applicable, Don't Know": is_Yes_No_DontKnow_NA,
+    "Is MS Diagnostic Test": is_MS_Diagnostic_Test,
+    "Is HowDidPersonHelp Choice": is_HowDidPersonHelp_choice
 }
 
 def makeTestSchedule():
