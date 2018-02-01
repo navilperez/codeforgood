@@ -4,35 +4,7 @@ import columnTests
 import numpy as np
 import os
 
-'''Things that need to be added to python for this to work:
-
-pandas
-datetime
-numpy 
-matplotlib (eventually)
-openpyxl (just in case of dependencies)
-xlrd (just in case of dependencies)
-xlwt (just in case of dependencies)
-xlsxwriter (just in case of dependencies)
-'''
-#TODO make a .bat to install the above to python3
-#using command 'python -m pip install [library]'
-#and make sure to write instructions for installing python 3
-#including making sure to check 'add to path' during installation
-
-'''We need to ask some questions to Sara, and also write a readme 
-saying they have to re-save the xls files, as pandas thinks they are corrupted
-
-Note to self, make custom error reminding that this needs to be done.
-Maybe add a logger too
-'''
-
-
-
-
 #Here's where the files are set for now
-#Later we can make it iterate through a directory or take some other input
-#such as command line argument, depending on usage needs
 __DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 FOLDER_NAME = '/surveyData'
 
