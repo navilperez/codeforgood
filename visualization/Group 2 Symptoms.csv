@@ -1,0 +1,46 @@
+,group,axis,value,description
+1,Clinically isolated syndrome,Facial Paralysis,17.24137931034483,"[symptoms2]:Paralysis of half or whole face (i.e. facial drooping with altered smile, difficulty closing an eye tightly or wrinkling forehead) (Paralysis1)"
+2,Relapsing remitting,Facial Paralysis,27.73892773892774,"[symptoms2]:Paralysis of half or whole face (i.e. facial drooping with altered smile, difficulty closing an eye tightly or wrinkling forehead) (Paralysis1)"
+3,Secondary progressive,Facial Paralysis,29.00232018561485,"[symptoms2]:Paralysis of half or whole face (i.e. facial drooping with altered smile, difficulty closing an eye tightly or wrinkling forehead) (Paralysis1)"
+4,Primary progressive,Facial Paralysis,14.34108527131783,"[symptoms2]:Paralysis of half or whole face (i.e. facial drooping with altered smile, difficulty closing an eye tightly or wrinkling forehead) (Paralysis1)"
+5,Not Sure,Facial Paralysis,21.875,"[symptoms2]:Paralysis of half or whole face (i.e. facial drooping with altered smile, difficulty closing an eye tightly or wrinkling forehead) (Paralysis1)"
+6,Clinically isolated syndrome,Facial Twitching,19.54022988505747,[symptoms2]:Facial twitching (FacialTwitching)
+7,Relapsing remitting,Facial Twitching,40.32634032634033,[symptoms2]:Facial twitching (FacialTwitching)
+8,Secondary progressive,Facial Twitching,34.33874709976798,[symptoms2]:Facial twitching (FacialTwitching)
+9,Primary progressive,Facial Twitching,23.643410852713178,[symptoms2]:Facial twitching (FacialTwitching)
+10,Not Sure,Facial Twitching,34.375,[symptoms2]:Facial twitching (FacialTwitching)
+11,Clinically isolated syndrome,Slowed/Slurred Speech,25.287356321839084,[symptoms2]:Speech articulation (speech sounds slurred or slowed or loses normal rhythm) (SpeechArticulation)
+12,Relapsing remitting,Slowed/Slurred Speech,49.805749805749805,[symptoms2]:Speech articulation (speech sounds slurred or slowed or loses normal rhythm) (SpeechArticulation)
+13,Secondary progressive,Slowed/Slurred Speech,55.68445475638051,[symptoms2]:Speech articulation (speech sounds slurred or slowed or loses normal rhythm) (SpeechArticulation)
+14,Primary progressive,Slowed/Slurred Speech,43.02325581395349,[symptoms2]:Speech articulation (speech sounds slurred or slowed or loses normal rhythm) (SpeechArticulation)
+15,Not Sure,Slowed/Slurred Speech,56.25,[symptoms2]:Speech articulation (speech sounds slurred or slowed or loses normal rhythm) (SpeechArticulation)
+16,Clinically isolated syndrome,Difficulty Swallowing,18.39080459770115,[symptoms2]:Difficulty with swallowing (Difficultyswallowing1)
+17,Relapsing remitting,Difficulty Swallowing,41.49184149184149,[symptoms2]:Difficulty with swallowing (Difficultyswallowing1)
+18,Secondary progressive,Difficulty Swallowing,49.651972157772626,[symptoms2]:Difficulty with swallowing (Difficultyswallowing1)
+19,Primary progressive,Difficulty Swallowing,47.286821705426355,[symptoms2]:Difficulty with swallowing (Difficultyswallowing1)
+20,Not Sure,Difficulty Swallowing,39.0625,[symptoms2]:Difficulty with swallowing (Difficultyswallowing1)
+21,Clinically isolated syndrome,Blindness/Blurry Vision,39.08045977011494,[symptoms2]:Blindness or blurry vision in one eye or both (Blindness1)
+22,Relapsing remitting,Blindness/Blurry Vision,64.87956487956488,[symptoms2]:Blindness or blurry vision in one eye or both (Blindness1)
+23,Secondary progressive,Blindness/Blurry Vision,71.46171693735499,[symptoms2]:Blindness or blurry vision in one eye or both (Blindness1)
+24,Primary progressive,Blindness/Blurry Vision,40.69767441860465,[symptoms2]:Blindness or blurry vision in one eye or both (Blindness1)
+25,Not Sure,Blindness/Blurry Vision,62.5,[symptoms2]:Blindness or blurry vision in one eye or both (Blindness1)
+26,Clinically isolated syndrome,Disturbed Vision,24.137931034482758,"[symptoms2]:Disturbed vision e.g. double vision, objects moving, etc. (Disturbedvision)"
+27,Relapsing remitting,Disturbed Vision,58.81895881895882,"[symptoms2]:Disturbed vision e.g. double vision, objects moving, etc. (Disturbedvision)"
+28,Secondary progressive,Disturbed Vision,63.80510440835266,"[symptoms2]:Disturbed vision e.g. double vision, objects moving, etc. (Disturbedvision)"
+29,Primary progressive,Disturbed Vision,42.248062015503876,"[symptoms2]:Disturbed vision e.g. double vision, objects moving, etc. (Disturbedvision)"
+30,Not Sure,Disturbed Vision,56.25,"[symptoms2]:Disturbed vision e.g. double vision, objects moving, etc. (Disturbedvision)"
+31,Clinically isolated syndrome,Numbness or Painful Feeling,82.75862068965517,"[symptoms2]:Sensory symptoms: Loss of feeling, painful feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11)"
+32,Relapsing remitting,Numbness or Painful Feeling,95.02719502719502,"[symptoms2]:Sensory symptoms: Loss of feeling, painful feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11)"
+33,Secondary progressive,Numbness or Painful Feeling,95.35962877030161,"[symptoms2]:Sensory symptoms: Loss of feeling, painful feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11)"
+34,Primary progressive,Numbness or Painful Feeling,90.69767441860465,"[symptoms2]:Sensory symptoms: Loss of feeling, painful feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11)"
+35,Not Sure,Numbness or Painful Feeling,92.1875,"[symptoms2]:Sensory symptoms: Loss of feeling, painful feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11)"
+36,Clinically isolated syndrome,Sensory Pain,78.16091954022988,[symptoms2]:Painful sensations (Sensory11Pain)
+37,Relapsing remitting,Sensory Pain,88.34498834498834,[symptoms2]:Painful sensations (Sensory11Pain)
+38,Secondary progressive,Sensory Pain,90.02320185614849,[symptoms2]:Painful sensations (Sensory11Pain)
+39,Primary progressive,Sensory Pain,84.88372093023256,[symptoms2]:Painful sensations (Sensory11Pain)
+40,Not Sure,Sensory Pain,85.9375,[symptoms2]:Painful sensations (Sensory11Pain)
+41,Clinically isolated syndrome,Sensory Symptoms (not pain),94.25287356321839,"[symptoms2]:Sensory symptoms (excluding pain): Loss of feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11_NoPain)"
+42,Relapsing remitting,Sensory Symptoms (not pain),96.42579642579643,"[symptoms2]:Sensory symptoms (excluding pain): Loss of feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11_NoPain)"
+43,Secondary progressive,Sensory Symptoms (not pain),97.4477958236659,"[symptoms2]:Sensory symptoms (excluding pain): Loss of feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11_NoPain)"
+44,Primary progressive,Sensory Symptoms (not pain),91.86046511627907,"[symptoms2]:Sensory symptoms (excluding pain): Loss of feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11_NoPain)"
+45,Not Sure,Sensory Symptoms (not pain),98.4375,"[symptoms2]:Sensory symptoms (excluding pain): Loss of feeling, unable to feel position of fingers/arms/legs, swollen feeling, numbness, tingling, feeling of pinpricks (Sensory11_NoPain)"

@@ -352,7 +352,24 @@ var RadarChart = {
         .attr("y", function(d, i) { return i * 2 * config.legendBoxSize; })
         .attr("width", config.legendBoxSize)
         .attr("height", config.legendBoxSize)
-        .attr("fill", function(d, g) { return config.colors(g); });
+        .attr("fill", function(d, g) { return config.colors(g); })
+        .on(over, function() {alert("The paragraph was clicked.");});
+        // .on(over, function(d) {
+        //   vis.svg.selectAll(".polygon-areas") // fade all other polygons out
+        //   .transition(250)
+        //     .attr("fill-opacity", 0.1)
+        //     .attr("stroke-opacity", 0.1);
+        //   d3.select(this) // focus on active polygon
+        //   .transition(250)
+        //     .attr("fill-opacity", 0.7)
+        //     .attr("stroke-opacity", config.polygonStrokeOpacity)
+        // })
+        // .on(out, function() {
+        //   d3.selectAll(".polygon-areas")
+        //     .transition(250)
+        //     .attr("fill-opacity", config.polygonAreaOpacity)
+        //     .attr("stroke-opacity", 1);
+        // })
 
       //Create text next to squares
       vis.legend.selectAll(".legend-labels")
