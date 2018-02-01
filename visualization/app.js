@@ -1,3 +1,5 @@
+// Code adapted from Chris Zhou http://bl.ocks.org/chrisrzhou/2421ac6541b68c1680f8
+
 (function() {
   angular.module("RadarChart", [])
     .directive("radar", radar)
@@ -13,6 +15,8 @@
     // function init
     function init() {
       // initialize controller variables
+      // These are the files that will be loaded onto the server
+      // Must be in the same directory
       ctrl.examples = [
         "Group 1 Symptoms",
         "Group 2 Symptoms",
