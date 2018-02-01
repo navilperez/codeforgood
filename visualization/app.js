@@ -14,10 +14,10 @@
     function init() {
       // initialize controller variables
       ctrl.examples = [
-        "sym1",
-        "sym2",
-        "sym3",
-        "sym4"
+        "Group 1 Symptoms",
+        "Group 2 Symptoms",
+        "Group 3 Symptoms",
+        "Group 4 Symptoms"
       ];
       ctrl.exampleSelected = ctrl.examples[0];
       ctrl.getData = getData;

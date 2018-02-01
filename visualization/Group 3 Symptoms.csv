@@ -1,0 +1,41 @@
+,group,axis,value,description
+1,Clinically isolated syndrome,Vertigo,39.08045977011494,[symptoms3]:Vertigo (Vertigo1)
+2,Relapsing remitting,Vertigo,64.25796425796426,[symptoms3]:Vertigo (Vertigo1)
+3,Secondary progressive,Vertigo,67.28538283062645,[symptoms3]:Vertigo (Vertigo1)
+4,Primary progressive,Vertigo,51.162790697674424,[symptoms3]:Vertigo (Vertigo1)
+5,Not Sure,Vertigo,65.625,[symptoms3]:Vertigo (Vertigo1)
+6,Clinically isolated syndrome,Painful Feeling in Face,12.643678160919542,"[symptoms3]:Sharp, painful feeling in face not due to trauma or injury (trigeminal neuralgia) (TrigeminalNeuralgia)"
+7,Relapsing remitting,Painful Feeling in Face,27.583527583527584,"[symptoms3]:Sharp, painful feeling in face not due to trauma or injury (trigeminal neuralgia) (TrigeminalNeuralgia)"
+8,Secondary progressive,Painful Feeling in Face,30.39443155452436,"[symptoms3]:Sharp, painful feeling in face not due to trauma or injury (trigeminal neuralgia) (TrigeminalNeuralgia)"
+9,Primary progressive,Painful Feeling in Face,21.705426356589147,"[symptoms3]:Sharp, painful feeling in face not due to trauma or injury (trigeminal neuralgia) (TrigeminalNeuralgia)"
+10,Not Sure,Painful Feeling in Face,25.0,"[symptoms3]:Sharp, painful feeling in face not due to trauma or injury (trigeminal neuralgia) (TrigeminalNeuralgia)"
+11,Clinically isolated syndrome,Electric Shock Feeling,28.735632183908045,[symptoms3]:Electric shock-like feeling when bending neck (Electricshockfeeling)
+12,Relapsing remitting,Electric Shock Feeling,53.613053613053616,[symptoms3]:Electric shock-like feeling when bending neck (Electricshockfeeling)
+13,Secondary progressive,Electric Shock Feeling,68.67749419953596,[symptoms3]:Electric shock-like feeling when bending neck (Electricshockfeeling)
+14,Primary progressive,Electric Shock Feeling,50.0,[symptoms3]:Electric shock-like feeling when bending neck (Electricshockfeeling)
+15,Not Sure,Electric Shock Feeling,48.4375,[symptoms3]:Electric shock-like feeling when bending neck (Electricshockfeeling)
+16,Clinically isolated syndrome,Itching,34.48275862068966,"[symptoms3]:Itching, not due to other causes e.g. psoriasis, insect bites, etc. (Itching1)"
+17,Relapsing remitting,Itching,55.08935508935509,"[symptoms3]:Itching, not due to other causes e.g. psoriasis, insect bites, etc. (Itching1)"
+18,Secondary progressive,Itching,57.540603248259856,"[symptoms3]:Itching, not due to other causes e.g. psoriasis, insect bites, etc. (Itching1)"
+19,Primary progressive,Itching,45.73643410852713,"[symptoms3]:Itching, not due to other causes e.g. psoriasis, insect bites, etc. (Itching1)"
+20,Not Sure,Itching,53.125,"[symptoms3]:Itching, not due to other causes e.g. psoriasis, insect bites, etc. (Itching1)"
+21,Clinically isolated syndrome,Burning Sensation in Feet,42.5287356321839,[symptoms3]:Burning sensation in feet (Burningsensationfeet)
+22,Relapsing remitting,Burning Sensation in Feet,55.55555555555556,[symptoms3]:Burning sensation in feet (Burningsensationfeet)
+23,Secondary progressive,Burning Sensation in Feet,68.67749419953596,[symptoms3]:Burning sensation in feet (Burningsensationfeet)
+24,Primary progressive,Burning Sensation in Feet,55.03875968992248,[symptoms3]:Burning sensation in feet (Burningsensationfeet)
+25,Not Sure,Burning Sensation in Feet,46.875,[symptoms3]:Burning sensation in feet (Burningsensationfeet)
+26,Clinically isolated syndrome,Cognitive Difficulties,44.827586206896555,"[symptoms3]:Cognitive difficulties, e.g. memory problems (CognitiveDifficulties)"
+27,Relapsing remitting,Cognitive Difficulties,79.64257964257965,"[symptoms3]:Cognitive difficulties, e.g. memory problems (CognitiveDifficulties)"
+28,Secondary progressive,Cognitive Difficulties,79.11832946635731,"[symptoms3]:Cognitive difficulties, e.g. memory problems (CognitiveDifficulties)"
+29,Primary progressive,Cognitive Difficulties,62.7906976744186,"[symptoms3]:Cognitive difficulties, e.g. memory problems (CognitiveDifficulties)"
+30,Not Sure,Cognitive Difficulties,70.3125,"[symptoms3]:Cognitive difficulties, e.g. memory problems (CognitiveDifficulties)"
+31,Clinically isolated syndrome,Sexual Dysfunction,24.137931034482758,"[symptoms3]:Sexual dysfunction, not caused by medication (SexualDysfunction)"
+32,Relapsing remitting,Sexual Dysfunction,48.174048174048174,"[symptoms3]:Sexual dysfunction, not caused by medication (SexualDysfunction)"
+33,Secondary progressive,Sexual Dysfunction,65.66125290023201,"[symptoms3]:Sexual dysfunction, not caused by medication (SexualDysfunction)"
+34,Primary progressive,Sexual Dysfunction,54.65116279069767,"[symptoms3]:Sexual dysfunction, not caused by medication (SexualDysfunction)"
+35,Not Sure,Sexual Dysfunction,50.0,"[symptoms3]:Sexual dysfunction, not caused by medication (SexualDysfunction)"
+36,Clinically isolated syndrome,Urinary Problems,40.229885057471265,"[symptoms3]:Urinary problems, e.g. unusual urgency or hesitancy (UrinaryProblems)"
+37,Relapsing remitting,Urinary Problems,75.36907536907536,"[symptoms3]:Urinary problems, e.g. unusual urgency or hesitancy (UrinaryProblems)"
+38,Secondary progressive,Urinary Problems,94.89559164733178,"[symptoms3]:Urinary problems, e.g. unusual urgency or hesitancy (UrinaryProblems)"
+39,Primary progressive,Urinary Problems,89.14728682170544,"[symptoms3]:Urinary problems, e.g. unusual urgency or hesitancy (UrinaryProblems)"
+40,Not Sure,Urinary Problems,81.25,"[symptoms3]:Urinary problems, e.g. unusual urgency or hesitancy (UrinaryProblems)"

@@ -20,8 +20,8 @@
 
 
   <!-- main content -->
-  <div class="main container">
-    <h2>Visualization</h2>
+  <div class="main container" style="height = 1000px;">
+    <h2>Visualization of Multiple Sclerosis Types and Symptoms</h2>
 
     <!-- visualization -->
     <div class="visualization col-xs-7">
@@ -37,20 +37,11 @@
     <!-- configuration -->
     <div class="configuration col-xs-5">
       <form>
-        <h3>Configuration Parameters</h3>
-        <div class="form-group">
-          <label>Width:</label>
-          <input type="number" class="form-control-inline" step="50" ng-model="radar.config.w" />
-          <label>Height:</label>
-          <input type="number" class="form-control-inline" step="50" ng-model="radar.config.h" />
-        </div>
+        <h3>Display Options</h3>
+
         <div class="form-group">
           <label>Levels:</label>
           <input type="number" class="form-control-inline" step="1" ng-model="radar.config.levels" />
-        </div>
-        <div class="form-group">
-          <label>Padding Scale:</label>
-          <input type="number" class="form-control-inline" step="0.1" ng-model="radar.config.facetPaddingScale" />
         </div>
         <div class="form-group">
           <label>Label Scale:</label>
@@ -63,26 +54,13 @@
           <label class="checkbox"><input type="checkbox" ng-model="radar.config.showVertices" />Vertices</label>
           <label class="checkbox"><input type="checkbox" ng-model="radar.config.showPolygons" />Polygons</label>
           <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLegend" />Legend</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLevelsLabels" />Levels Labels</label>
+          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLevelsLabels" />Levels Labels (Percentages)</label>
           <label class="checkbox"><input type="checkbox" ng-model="radar.config.showAxesLabels" />Axes Labels</label>
         </div>
-        <p class="text-muted">(NOTE: Not all configuration options are shown, refer to <code>README.md</code> or <code>radarDraw.js</code> for more details)</p>
       </form>
     </div>
   </div>
   <hr />
-
-
-  <!-- description -->
-  <div class="description">
-      <li><a href="data_the_avengers.csv" target="_blank">The Avengers</a> (Power Grid ratings)</li>
-      <li><a href="data_plant_seasons.csv" target="_blank">Plant Seaons</a> (mock data)</li>
-      <li><a href="data_car_ratings.csv" target="_blank">Car Ratings</a> (mock data)</li>
-    </ul>
-    <input id="fileUpload" type="file" on-read-file="radar.getData($fileContent)" />
-  </div>
-  <hr/>
-
 
 
   <!-- details -->
@@ -107,14 +85,14 @@
 
 
   <!-- footer -->
-  <footer>
+  <!-- <footer>
     <p><a href="https://gist.github.com/chrisrzhou/2421ac6541b68c1680f8" target="_blank">D3 Radar Chart</a> by chrisrzhou, 2015-01-15
       <br />
       <a href="http://github.com/chrisrzhou" target="_blank"><i class="fa fa-github"></i></a> |
       <a href="http://bl.ocks.org/chrisrzhou" target="_blank"><i class="fa fa-cubes"></i></a> |
       <a href="http://www.linkedin.com/in/chrisrzhou" target="_blank"><i class="fa fa-linkedin"></i></a>
     </p>
-  </footer>
+  </footer> -->
 
 
   <!-- scripts -->

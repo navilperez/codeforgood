@@ -66,12 +66,12 @@ pre {
 .checkbox {
   margin-left: 20px;
 }
-/* Customizable classes used in D3 vis, uncomment to customize
-.svg-vis {
+ /*Customizable classes used in D3 vis, uncomment to customize*/
+/*.svg-vis {
   background-color: gray;
-  opacity: 0.5;
+  opacity: 0.5;*/
 }
-.verticesTooltip {
+/*.verticesTooltip {
   position: absolute;
   color: red;
   font-size: 12px;
@@ -90,7 +90,7 @@ pre {
 }
 .level-labels {
   fill: red;
-  font-size: 12px;
+  z-index: 100000;
 }
 .axis-lines {
   stroke: blue;
@@ -99,17 +99,18 @@ pre {
 .axis-labels {
   fill: blue;
   font-size: 12px;
+  z-index: 1000;
 }
 .polygon-vertices {
   fill-opacity: 0.6;
 }
 .polygon-areas {
   fill-opacity: 0.6;
-}
-.legend-tiles {
+
+}*/
+/*.legend-tiles {
   fill-opacity: 0.3;
 }
 .legend-labels {
   font-size: 15px;
-}
-*/
+}*/
