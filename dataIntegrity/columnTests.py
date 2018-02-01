@@ -152,25 +152,25 @@ TEST_MAPPING = {
     'Is a number atleast zero': is_atleast_zero,
     'Is a positive number': is_positive,
     'Is a valid birthdate (over 21, under 150)': is_valid_birthdate,
-    "Is 'Y' or 'N'": is_Y_or_N,
-    "Is an integer between 1 to 2": is_1_or_2,
-    "Is an integer between 1 to 5": is_1_to_5,
-    "Is an integer between 1 to 3": is_1_to_3,
-    "Is an integer between 0 to 2": is_0_to_2,
-    "Is an integer between 1 to 10": is_1_to_10,
-    "Is an integer between 0 to 4": is_0_to_4,
-    "is 'Yes' or 'No'": is_Yes_or_No,
-    "Is WellnessActivities Choice": is_WellnessActivities_choice,
-    "Is VitaminsMinerals Choice":is_VitaminsMinerals_choice
-    "Is Supplements Choice":is_Supplements_choice
-    "Is Diet Choice":is_Diet_choice
-    "Is HighCholesterol Drug": is_high_cholesterol_drug,
-    "Is Yes, No, Don't Know": is_Yes_No_DontKnow,
-    "Is HasMSChoice": is_HasMSChoice,
-    "Is Form of MS": is_form_of_MS,
-    "Is Yes, No, Not Applicable, Don't Know": is_Yes_No_DontKnow_NA,
-    "Is MS Diagnostic Test": is_MS_Diagnostic_Test,
-    "Is HowDidPersonHelp Choice": is_HowDidPersonHelp_choice
+    "Is 'Y' or 'N'": is_Y_or_N
+    # "Is an integer between 1 to 2": is_1_or_2,
+    # "Is an integer between 1 to 5": is_1_to_5,
+    # "Is an integer between 1 to 3": is_1_to_3,
+    # "Is an integer between 0 to 2": is_0_to_2,
+    # "Is an integer between 1 to 10": is_1_to_10,
+    # "Is an integer between 0 to 4": is_0_to_4,
+    # "is 'Yes' or 'No'": is_Yes_or_No,
+    # "Is WellnessActivities Choice": is_WellnessActivities_choice,
+    # "Is VitaminsMinerals Choice":is_VitaminsMinerals_choice,
+    # "Is Supplements Choice":is_Supplements_choice,
+    # "Is Diet Choice":is_Diet_choice,
+    # "Is HighCholesterol Drug": is_high_cholesterol_drug,
+    # "Is Yes, No, Don't Know": is_Yes_No_DontKnow,
+    # "Is HasMSChoice": is_HasMSChoice,
+    # "Is Form of MS": is_form_of_MS,
+    # "Is Yes, No, Not Applicable, Don't Know": is_Yes_No_DontKnow_NA,
+    # "Is MS Diagnostic Test": is_MS_Diagnostic_Test,
+    # "Is HowDidPersonHelp Choice": is_HowDidPersonHelp_choice
 }
 
 def makeTestSchedule():

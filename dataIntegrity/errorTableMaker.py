@@ -61,7 +61,7 @@ def makeErrorTable(data):
 	
 	Makes Excel file of errors.
 
-	The file has the structure of the original dataa
+	The file has the structure of the original data
 	with one additional column containing columns in
 	error for each row.
 	
