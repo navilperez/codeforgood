@@ -69,102 +69,101 @@ def is_int_in_range(x, start, end):
     '''checks if x is number in provided range'''
     try:
         return int(x) in range(start, end + 1)
-    except: 
+    except:
         return False
 
 def is_1_or_2(x):
     '''checks if x is number in range 1 -> 2'''
-    
+
     return is_int_in_range(x, 1, 2)
-    
+
 def is_1_to_5(x):
     '''checks if x is number in range 1 -> 5'''
-    
+
     return are_valid_Numbers(x, range(1,6))
 
 def is_1_to_3(x):
     '''checks if x is number in range 1 -> 3'''
-    
+
     return is_int_in_range(x, 1, 3)
 
 def is_0_to_2(x):
     '''checks if x is number in range 0 -> 2'''
-    
+
     return is_int_in_range(x, 0, 2)
 
 def is_0_to_10(x):
     '''checks if x is number in range 1 -> 10'''
-    
+
     return is_int_in_range(x, 0, 10)
 
 def is_0_to_4(x):
     '''checks if x is number in range 0 -> 4'''
-    
+
     return is_int_in_range(x, 0, 4)
 
 def is_in_Choices(x, choices):
     '''checks if x is in list of possible choices'''
-    
+
     return str(x) in choices
 
 def is_Yes_or_No(x):
-
+    '''checks if x is a yes or no'''
     return is_in_Choices(x, ["Yes", "No"]);
 
 
 def is_WellnessActivities_choice(x):
-
+    '''checks if x is in list of possible choices for wellness activities'''
     return is_in_Choices(x, ["ActivitiesUsed", "ActivitiesHelpful"])
 
 def is_VitaminsMinerals_choice(x):
-
+    '''checks if x is in list of possible choices for vitamin and minerals'''
     return is_in_Choices(x, ["VitMinUsed", "VitMinHelpful"])
 
 def is_Supplements_choice(x):
-
+    '''checks if x is in list of possible choices for supplements'''
     return is_in_Choices(x, ["SupplementsUsed",  "SupplementHelpful"])
 
 def is_Diet_choice(x):
-    
+    '''checks if x is in list of possible choices for diets'''
     return is_in_Choices(x, ["DietUsed", "DietHelpful"])
 
 def is_high_cholesterol_drug(x):
-
+    '''checks if x is a valid high cholesterol drug'''
     hcDrugs = ["Alirocumab", "Atorvastatin", "Cholestyramine", "Colesevelam", "Colestipol", "Evolocumab", "Ezetimibe", "Fenofibrate", "Fluvastatin", "Gemfibrozil", "Lovastatin", "Niacin", "Pitavastatin", "Pravastatin", "Rosuvastatin", "Simvastatin", "Other"]
 
     return are_valid_Choices(x, hcDrugs)
-    
+
 
 def is_Yes_No_DontKnow(x):
-
+    '''checks if x is yes, no, or don't know'''
     return is_in_Choices(x, ["Yes", "No", "DontKnow"])
 
 def is_HasMSChoice(x):
+    '''checks if x is in list of possible choices for MS choice'''
     return is_in_Choices(x, ["ProbablyHaveMS", "NotSureHaveMS", "DontHaveMS"])
 
 def is_form_of_MS(x):
+    '''checks if x is a valid type of MS'''
     return is_in_Choices(x, ["CIS", "rrms", "spms","ppms", "ris", "99"])
 
 def is_Yes_No_DontKnow_NA(x):
+    '''checks if x is yes, no, NA, or I don't Know'''
     return is_in_Choices(x, ["Yes", "No", "IDontKnow", "Notapplicable"])
 
 def is_MS_Diagnostic_Test(x):
-    
-   
-    print(tests)
+    '''checks if x is in list of possible choices for diagnostic tests'''
 
     return are_valid_Choices(x, ["HeadMRI", "SpinalcordMRI", "SpinalFluidTest", "BloodTest", "DiagnosticEvoked", "NeurologicalExamination", "Other", "NoTest", "NotSure"])
 
 def are_valid_Numbers(inputString, choices):
+    '''checks if the string passed only contains digits'''
 
-    print("inputString", inputString)
-    print("choices", choices)
-
-    try: 
+    try:
         if int(inputString) in choices:
             return True
-    except: 
-        try: 
+    except:
+        try:
             inputArray = [int(elt) for elt in inputString.split(',')]
             print(inputArray)
             for elt in inputArray:
@@ -175,7 +174,7 @@ def are_valid_Numbers(inputString, choices):
             return False
 
 def are_valid_Choices(inputString, choices):
-    
+    '''checks to see if each of the elements are valid choices'''
 
     inputArray = [elt.strip() for elt in inputString.split(',')]
     for elt in inputArray:
@@ -184,12 +183,9 @@ def are_valid_Choices(inputString, choices):
     return True
 
 def is_HowDidPersonHelp_choice(x):
+    '''checks if x is in list of possible choices for being helped by a person'''
     return is_in_Choices(x, ["ReadOrEntered", "Answered", "OtherHelp"])
 
-def is_date(x):########################
-    return True
-def is_email(x):##########################
-    return True
 
 '''Here are the mappings from the excel file to test functions they represent'''
 TEST_MAPPING = {
@@ -223,11 +219,11 @@ TEST_MAPPING = {
 
 def makeTestSchedule():
     '''Make Test Schedule
-    
+
     Reads excel file of test settings,
     and then makes a dictionary of which
     tests apply to which column
-    
+
     Returns:
         dict -- maps column names (str) to lists of test functions
     '''
@@ -235,18 +231,18 @@ def makeTestSchedule():
     df = df.replace(np.nan, '', regex=True)
     fieldTests = readSettingSpreadsheet(df)
     return fieldTests
-    
+
 
 def readSettingSpreadsheet(df):
     '''Read Settings Spreadsheet
-    
+
     Does the nitty gritty of reading the spreadsheet,
     in which cells that have values signify a test for a
     column, and empty cells do not.
-    
+
     Arguments:
         df {DataFrame} -- Created by makeTestSchedule
-    
+
     Returns:
         dict -- maps column names (str) to lists of test functions
     '''
