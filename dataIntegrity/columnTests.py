@@ -1,8 +1,10 @@
 import pandas as pd
 import datetime
 import numpy as np
+import os
 
-__EXCEL_FILE = "TestSettings.xlsx"
+__DIR_PATH = os.path.dirname(os.path.realpath(__file__))
+__EXCEL_FILE = __DIR_PATH+"/TestSettings.xlsx"
 
 '''DI TESTS'''
 '''Any additional tests need to be put here with these and then added to the dictionary below the tests.'''

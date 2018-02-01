@@ -34,9 +34,7 @@ Maybe add a logger too
 #Later we can make it iterate through a directory or take some other input
 #such as command line argument, depending on usage needs
 __DIR_PATH = os.path.dirname(os.path.realpath(__file__))
-FILENAME = __DIR_PATH+"/exampleData/dem_info.xls"
-OUTPUT = __DIR_PATH+"/testErrorTable/dem_info_errors.xlsx"
-
+FOLDER_NAME = '/surveyData'
 
 
 def makeDataFrameFromExcel(excel_file):
@@ -56,7 +54,7 @@ def makeDataFrameFromExcel(excel_file):
 	frame = frame.replace(np.nan, '', regex=True)
 	return frame
 
-def makeErrorTable(data):
+def makeErrorTable(data, path):
 	'''Make Error Table
 	
 	Makes Excel file of errors.
@@ -67,6 +65,7 @@ def makeErrorTable(data):
 	
 	Arguments:
 		data {DataFrame} -- The raw data to test
+		path {str} -- path to original file
 	
 	Returns:
 		bool -- True
@@ -74,10 +73,10 @@ def makeErrorTable(data):
 	dataCopy = data.copy(deep=True)
 	errorFrame = runTests(dataCopy)
 	errorFrame = errorFrame[errorFrame.error_columns != '']
-	makeOutputExcel(errorFrame)
+	makeOutputExcel(errorFrame, path)
 	return True
 
-def makeOutputExcel(df):
+def makeOutputExcel(df, path):
 	'''Make Output Excel
 	
 	Writes a DataFrame to an Excel file.
@@ -85,11 +84,12 @@ def makeOutputExcel(df):
 	
 	Arguments:
 		df {DataFrame} -- DataFrame to write
+		path {string} -- original file's path & title
 	
 	Returns:
 		bool -- True
 	'''
-	outputFileName = makeOutputFilename()
+	outputFileName = makeOutputFilename(path)
 	writer = pd.ExcelWriter(outputFileName, engine='xlsxwriter')
 	df.to_excel(writer, index=False, sheet_name="Errors")
 	workbook = writer.book
@@ -99,10 +99,10 @@ def makeOutputExcel(df):
 	writer.save()
 	return True
 
-def makeOutputFilename():
-	#Until I get around to this, it just returns the default
-	#eventually it will be a function of the input file name
-	return OUTPUT
+def makeOutputFilename(filename):
+	#takes a file's title and adds 'errors' to the end of it
+	splitname = filename.split('.')
+	return splitname[0]+'_errors.xlsx'
 
 def testAllCols(row):
 	'''Test All Columns
@@ -119,11 +119,16 @@ def testAllCols(row):
 	errorColumns = []
 	for cind, column in row.iteritems():
 		if column!="":
-			tests = getTests(cind)
-			for test in tests:
-				if not test(column):
-					errorColumns.append(cind)
-					break
+			try:
+				tests = getTests(cind)
+				for test in tests:
+					if not test(column):
+						errorColumns.append(cind)
+						break
+			except:
+				print('no tests for column:')
+				print(cind)
+				print('')
 	errorColumnsString = ", ".join(errorColumns)
 	return errorColumnsString
 
@@ -154,10 +159,17 @@ def getTests(col):
 	Returns:
 		list -- list of functions returning True if passed, False otherwise
 	'''
-	return columnTests.FIELD_TESTS[col]
-
-#Global original DataFrame
-DATA = makeDataFrameFromExcel(FILENAME)	
+	return columnTests.FIELD_TESTS[col]	
 
 if __name__ == '__main__':
-	makeErrorTable(DATA)
+	try:
+		for filename in os.listdir(__DIR_PATH+FOLDER_NAME):
+			if (filename.endswith(".xls") or filename.endswith(".xlsx") or filename.endswith(".xlsm")) and not filename.endswith("_errors.xlsx"):
+				try:
+					path = __DIR_PATH+FOLDER_NAME+'/'+filename
+					data = makeDataFrameFromExcel(path)
+					makeErrorTable(data, path)
+				except:
+					print('there was an error with filename %s' % filename)
+	except:
+		print('there was a problem, probably in finding the folder %s' % FOLDER_NAME)
