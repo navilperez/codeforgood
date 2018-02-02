@@ -28,7 +28,8 @@ detailing the possibly erroneous rows.
 The code thinks that the raw data as we originally received it is corrupt!
 You MUST open the raw data in Excel and click 'save as' and save a new copy
 of it to fix this! I recommend taking the original data and saving it to the 
-'surveyData' folder with a shorter, more descriptive name.
+'surveyData' folder with a shorter, more descriptive name. ONLY these new
+copies 
 
 'columnTests.py' contains all the functions that are used to test data fields
 from the raw survey excel files. To add tests, there are a few simple steps:
@@ -37,17 +38,21 @@ you shouldn't put it later down in the file). Make sure that it takes in one
 argument and returns True or False. Note that with pandas, the data library
 used for this tool, pandas will guess the type of the field that it finds in the
 raw data, (i.e. a cell with '13' will by default be a float, but the cell 'kssdf'
-will be a string).
+will be a string). This affects the input type of the function, and can be used
+to your advantage.
 2. Add your test to the dictionary 'TEST_MAPPING' later down in the file, mapping
 a title for your test as a string to the name of your function.
 3. Using the key that you made in (2), add a column with that exact title to the
-'TestSettings.xlsx' file (and check the rows for that column accordingly)
+'TestSettings.xlsx' file (and check the rows for that column accordingly to use 
+the test).
 
-'errorTableMaker.py' actually reads raw data and creates the excel file with errors.
+'errorTableMaker.py' actually reads the raw data and creates the excel file(s) with errors.
 It relies on the pandas library to do this. It doesn't need to be edited much,
 unless if you want to change the name of the file 'surveyData', in which case you
 have to change the variable 'FOLDER_NAME' accordingly. It will read any excel files
 in the folder 'surveyData' that are Excel workbooks that don't end in '_errors'.
+It can handle multiple flies at once, it doens't need to be one at a time in
+'surveyData'.
 							***IMPORTANT***
 To run the data cleaner, you just run 'errorTableMaker.py'.
 
